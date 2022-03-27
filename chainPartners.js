@@ -70,7 +70,7 @@ async function setPair(code, orderbook_units){
     result[code] = { "ask": ask, "bids" : bids };
   }
 
-// 페어 확인 호출 함수   
+// 페어 확인 호출 함수      
 function printPrice(){   
     Object.keys(result).forEach(key => {
       console.log(`${key} :` ,result[key]);
