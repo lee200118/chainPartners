@@ -76,4 +76,4 @@ function printPrice(){
       console.log(`${key} :` ,result[key]);
     });
 }
-setInterval(printPrice,5000);
+setInterval(printPrice,5000); 
