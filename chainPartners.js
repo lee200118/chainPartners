@@ -20,6 +20,8 @@ function connectUpBit() {
     websocket.on("close", ()=>{
         console.log("disConnected!");
         websocket.close();
+        // 연결이 끊어 질시 다시 접속처리
+        websocket.close();
         setTimeout(function() {
             console.log("reConnected!");
             connectUpBit();
