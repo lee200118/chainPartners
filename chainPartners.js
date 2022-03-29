@@ -35,21 +35,10 @@ function onWsMessage(message) {
 function onWsClose() {
     console.log("disConnected!");
     websocket.close();
-    // 연결이 끊어 질시 다시 접속처리
-    setTimeout(function() {
-        console.log("reConnected!");
-        connectUpBit();
-    }, 1000);
-
 }
 function onWsError(error) {
     //에러 확인
     console.log("error", error);
-    // 연결이 끊어 질시 다시 접속처리
-    setTimeout(function() {
-        console.log("reConnected!");
-        connectUpBit();
-    }, 1000);
 }
 
 // 페어를 키 값으로 하고 asks(매도호가들), bids(매수호가들)를 배열로 가지는 데이터 만들기
